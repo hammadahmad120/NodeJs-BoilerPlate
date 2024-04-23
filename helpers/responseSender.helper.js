@@ -2,7 +2,7 @@ module.exports = {
   //generic response templates for success, error and validation error case to keep consistent response object
   sendErrorResponse: (res, err, code) => {
     if (!code) {
-      code = 400;
+      code = 500;
     }
     if (!err || code === 500) {
       err = "Some unexpected error occur";
